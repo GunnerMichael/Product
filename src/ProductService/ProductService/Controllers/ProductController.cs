@@ -54,12 +54,12 @@ namespace ProductService.Controllers
         /// </summary>
         /// <param name="products">source product data</param>
         /// <returns>the mapped data</returns>
-        private IEnumerable<Model.ProductEntity> MapProduct(IEnumerable<ProductShared.ProductEntity> products)
+        private IEnumerable<Model.ProductItem> MapProduct(IEnumerable<ProductShared.ProductEntity> products)
         {
-            List<Model.ProductEntity> mapped = new List<Model.ProductEntity>();
+            List<Model.ProductItem> mapped = new List<Model.ProductItem>();
             foreach(var item in products)
             {
-                var mapItem = new Model.ProductEntity() { Code = item.Code, Description = item.Description, Id = item.Id, Name = item.Name, PrimaryImageUri = item.PrimaryImageUri };
+                var mapItem = new Model.ProductItem() { Code = item.Code, Description = item.Description, Id = item.Id, Name = item.Name, PrimaryImageUri = item.PrimaryImageUri };
                 mapped.Add(mapItem);
             }
 

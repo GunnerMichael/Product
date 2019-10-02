@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 namespace ProductService.Model
 {
     /// <summary>
-    /// Entity that represents a product in the API
+    /// Item that represents a product in the API
     /// </summary>
-    public class ProductEntity
+    public class ProductItem
     {
         /// <summary>
         /// Unique product identifer

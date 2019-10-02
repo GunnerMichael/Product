@@ -14,11 +14,11 @@ namespace ProductService.Response
         /// <summary>
         /// list to hold the products
         /// </summary>
-        private List<ProductEntity> products = new List<ProductEntity>();
+        private List<ProductItem> products = new List<ProductItem>();
 
         /// <summary>
         /// List of products
         /// </summary>
-        public List<ProductEntity> Products => products;
+        public List<ProductItem> Products => products;
     }
 }

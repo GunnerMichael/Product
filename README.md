@@ -4,6 +4,10 @@ Simple product database REST API
 
 Demonstrates using dotnet core 3; [Swagger](https://swagger.io/) via [NSwag](https://github.com/RicoSuter/NSwag)
 
+## Swagger
+
+NSwag reads the XML comments to produce detailed descriptions, otherwise you get the basic schema and structure. I use [GhostDoc Community](https://submain.com/download/ghostdoc/community/) to help with the XML comments.
+
 ## References
 
 https://dotnet.microsoft.com/learn/dotnet/architecture-guides

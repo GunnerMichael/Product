@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using ProductService.Model;
@@ -33,11 +34,34 @@ namespace ProductService.Controllers
             this._productRepository = productRepository;
         }
 
+
+        [HttpPost]
+        [ProducesResponseType(StatusCodes.Status202Accepted)]
+        public ActionResult Post([FromBody]ProductItem item)
+        {
+            Guid id = Guid.NewGuid();
+
+            return AcceptedAtAction(nameof(Get), new { id = id }, id);
+        }
+
+        /// <summary>
+        /// Get a product
+        /// </summary>
+        /// <returns>A ProductListResponse object</returns>
+        [HttpGet("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+
+        public ActionResult<ProductListResponse> Get([FromRoute]string id)
+        {
+            return Ok();
+        }
+
         /// <summary>
         /// Get a list of products
         /// </summary>
         /// <returns>A ProductListResponse object</returns>
         [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public ActionResult<ProductListResponse> Get()
         {
             var x = new ProductListResponse();

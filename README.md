@@ -20,4 +20,4 @@ https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-nswa
 
 https://github.com/dotnet-presentations/dotnetconf2019/tree/master/Technical/keynote
 
-
+https://docs.microsoft.com/en-us/aspnet/core/web-api/advanced/conventions?view=aspnetcore-3.0

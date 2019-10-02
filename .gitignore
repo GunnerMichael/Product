@@ -358,3 +358,4 @@ MigrationBackup/
 .ionide/
 src/ProductApp/ProductApp.sln
 src/ProductService/ProductService/ProductService.xml
+

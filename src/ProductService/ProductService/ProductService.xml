@@ -29,32 +29,32 @@
             <param name="products">source product data</param>
             <returns>the mapped data</returns>
         </member>
-        <member name="T:ProductService.Model.ProductEntity">
+        <member name="T:ProductService.Model.ProductItem">
             <summary>
-            Entity that represents a product in the API
+            Item that represents a product in the API
             </summary>
         </member>
-        <member name="P:ProductService.Model.ProductEntity.Id">
+        <member name="P:ProductService.Model.ProductItem.Id">
             <summary>
             Unique product identifer
             </summary>
         </member>
-        <member name="P:ProductService.Model.ProductEntity.Code">
+        <member name="P:ProductService.Model.ProductItem.Code">
             <summary>
             Product Code
             </summary>
         </member>
-        <member name="P:ProductService.Model.ProductEntity.Name">
+        <member name="P:ProductService.Model.ProductItem.Name">
             <summary>
             Product Name
             </summary>
         </member>
-        <member name="P:ProductService.Model.ProductEntity.Description">
+        <member name="P:ProductService.Model.ProductItem.Description">
             <summary>
             Description of the product
             </summary>
         </member>
-        <member name="P:ProductService.Model.ProductEntity.PrimaryImageUri">
+        <member name="P:ProductService.Model.ProductItem.PrimaryImageUri">
             <summary>
             URI to the main product image
             </summary>
